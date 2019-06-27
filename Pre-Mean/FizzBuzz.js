@@ -27,15 +27,14 @@ n = 15;
 function fizzBuzz(n) {
     fizzBuzzString = "";
     for(let i = 1; i <= n; i++){
-        console.log(fizzBuzzString);
-        if(i % 3 == 0) {
-            fizzBuzzString += "Fizz, ";
-        }
-        if(i % 5 == 0) {
-            fizzBuzzString += "Buzz, ";
-        }
         if(i % 3 == 0 && i % 5 == 0) {
             fizzBuzzString += "FizzBuzz";
+        }
+        else if(i % 3 == 0) {
+            fizzBuzzString += "Fizz, ";
+        }
+        else if(i % 5 == 0) {
+            fizzBuzzString += "Buzz, ";
         }
         else {
             fizzBuzzString += i + ", ";
@@ -44,6 +43,7 @@ function fizzBuzz(n) {
           fizzBuzzString += "."
         }
     }
+    console.log(fizzBuzzString);
     return fizzBuzzString;
 }
 
