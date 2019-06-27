@@ -47,4 +47,4 @@ function fizzBuzz(n) {
     return fizzBuzzString;
 }
 
-fizzBuzz(n);
+fizzBuzz(n); 
