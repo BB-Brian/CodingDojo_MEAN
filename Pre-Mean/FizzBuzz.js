@@ -28,13 +28,13 @@ function fizzBuzz(n) {
     fizzBuzzString = "";
     for(let i = 1; i <= n; i++){
         console.log(fizzBuzzString);
-        if(i % 3 === 0) {
+        if(i % 3 == 0) {
             fizzBuzzString += "Fizz, ";
         }
-        if(i % 5 === 0) {
+        if(i % 5 == 0) {
             fizzBuzzString += "Buzz, ";
         }
-        if(i % 3 && i % 5 === 0) {
+        if(i % 3 == 0 && i % 5 == 0) {
             fizzBuzzString += "FizzBuzz";
         }
         else {
